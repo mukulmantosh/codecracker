@@ -1,0 +1,1 @@
+$("#submit").click(function(){return $.ajax({type:"post",url:"regsuc.php",data:$("#form").serialize(),cache:!1,success:function(t){var e=t;$("#form")[0].reset(),"success"==e?$.Notification.autoHideNotify("success","top left","Hi","Congratulations! You have successfully registered"):$.Notification.autoHideNotify("error","top right","ERROR",""+e)}}),!1});
